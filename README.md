@@ -10,9 +10,9 @@
 - 追加 更多的粒子效果
 - 移除玩家自带光源（后续将在 6c 版本重新加回，并可以由玩家自行开关）
 
-![o1](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Aseprite/Online-1.png)
+![o1](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Online-1.png)
 
-![o2](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Aseprite/Online-2.png)
+![o2](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Online-2.png)
 
 ## 22w5
 
