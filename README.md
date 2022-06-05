@@ -42,7 +42,7 @@
 
 > 参考了简书的[这篇文章](https://www.jianshu.com/p/5c222373e40f)
 
-![Wei](C:\Users\resum\OneDrive - rrr6\文档\GitHub\Lhmgtb\Assets\Aseprite\Wei-02.png)
+![Wei](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Wei-02.png)
 
 - 游戏名称：苇萸
 - 游戏类型：ACT
