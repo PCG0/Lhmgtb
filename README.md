@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://github.com/PCG0/Lhmgtb/blob/main/Assets/Images/%E9%98%BF%E8%8B%87gif.gif"/>
+</p>
+
 # 更新日志
 
 > **关于游戏请移步至[Wiki](https://github.com/PCG0/Lhmgtb/wiki)**
