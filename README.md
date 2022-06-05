@@ -2,6 +2,12 @@
 <img src="https://github.com/PCG0/Lhmgtb/blob/main/Assets/Images/%E9%98%BF%E8%8B%87gif.gif"/>
 </p>
 
+<div align="center">
+# 苇萸
+    
+[![GitHub release (latest by date)]()](https://github.com/PCG0/Lhmgtb/releases)
+</div>
+
 # 更新日志
 
 > **关于游戏请移步至[Wiki](https://github.com/PCG0/Lhmgtb/wiki)**
