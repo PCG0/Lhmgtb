@@ -10,9 +10,9 @@
 - 追加 更多的粒子效果
 - 移除玩家自带光源（后续将在 6c 版本重新加回，并可以由玩家自行开关）
 
-![](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/Online-1.jpg)
+![o1](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/Online-1.jpg)
 
-![](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/Online-2.jpg)
+![o2](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/Online-2.jpg)
 
 ## 22w5
 
@@ -24,9 +24,9 @@
     - 临时性设置：OPTION 用于切换“全屏”与“窗口”
 - 当鼠标空闲时自动隐藏
 
-![](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/MainMenu-MinScreen.png)
+![mmms](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/MainMenu-MinScreen.png)
 
-![](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/MainMenu-FullScreen.png)
+![mmfs](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/MainMenu-FullScreen.png)
 
 ## 22w4
 
