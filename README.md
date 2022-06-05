@@ -7,13 +7,12 @@
 > 2022-05-24
 
 - 新增 *极高延迟的* 多人在线联机
-
-![联机-1](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/联机-1.jpg)
-
-![联机-2](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/联机-2.jpg)
-
 - 追加 更多的粒子效果
 - 移除玩家自带光源（后续将在 6c 版本重新加回，并可以由玩家自行开关）
+
+![](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/联机-1.jpg)
+
+![](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/联机-2.jpg)
 
 ## 22w5
 
@@ -23,12 +22,11 @@
 - 使用数字键“1”和“2”控制镜头缩放，而不再使用鼠标滚轮控制
 - 新增 主菜单
     - 临时性设置：OPTION 用于切换“全屏”与“窗口”
+- 当鼠标空闲时自动隐藏
 
-![主界面-窗口化](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/主界面-窗口化.png)
+![](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/主界面-窗口化.png)
 
-![主界面-全屏化](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/主界面-全屏化.png)
-
-- - 当鼠标空闲时自动隐藏
+![](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/主界面-全屏化.png)
 
 ## 22w4
 
