@@ -9,6 +9,7 @@
 - 新增 *极高延迟的* 多人在线联机
 
 ![联机-1](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/联机-1.jpg)
+
 ![联机-2](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/联机-2.jpg)
 
 - 追加 更多的粒子效果
@@ -24,6 +25,7 @@
     - 临时性设置：OPTION 用于切换“全屏”与“窗口”
 
 ![主界面-窗口化](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/主界面-窗口化.png)
+
 ![主界面-全屏化](https://github.com/PCG0/Lhmgtb/tree/main/Assets/Images/主界面-全屏化.png)
 
 - - 当鼠标空闲时自动隐藏
