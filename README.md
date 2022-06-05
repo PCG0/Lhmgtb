@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/PCG0/Lhmgtb/blob/main/Assets/Images/%E9%98%BF%E8%8B%87gif.gif"/>
+<img src="https://github.com/PCG0/Lhmgtb/blob/main/Assets/Images/_nmbimg.fastmirror.org_image_2021-03-11_604a26047.gif"/>
 </p>
 
 <div align="center">
