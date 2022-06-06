@@ -6,7 +6,8 @@
 
 # 苇萸
 
-[![GitHub release (latest by date)](https://img.shields.io/badge/release-22w6-brightgreen)](https://github.com/PCG0/Lhmgtb/releases)
+[![GitHub release](https://img.shields.io/badge/release-22w6-brightgreen)](https://github.com/PCG0/Lhmgtb/releases) [![GitHub wiki](https://img.shields.io/badge/wiki-官方中文-blue)](https://github.com/PCG0/Lhmgtb/wiki)
+
 </div>
 
 # 更新日志
