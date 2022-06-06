@@ -11,7 +11,7 @@
 
 # 更新日志
 
-> **关于游戏请移步至[Wiki](https://github.com/PCG0/Lhmgtb/wiki)**
+> **关于游戏请移步至[Wiki](https://github.com/PCG0/Lhmgtb/wiki)** 
 
 ## 22w6
 
@@ -19,7 +19,7 @@
 
 - 新增 *极高延迟的* 多人在线联机
 - 追加 更多的粒子效果
-- 移除玩家自带光源（后续将在 6c 版本重新加回，并可以由玩家自行开关）
+- 移除玩家自带光源 ~~（后续将在 6c 版本重新加回，并可以由玩家自行开关）~~ *不要随便立flag（*
 
 ![o1](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Online-1.png)
 
