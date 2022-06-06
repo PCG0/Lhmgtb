@@ -6,7 +6,7 @@
 
 # 苇萸
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Richasy/Bili.Uwp)](https://github.com/PCG0/Lhmgtb/releases)
+[![GitHub release (latest by date)](https://img.shields.io/badge/release-22w6-brightgreen)](https://github.com/PCG0/Lhmgtb/releases)
 </div>
 
 # 更新日志
