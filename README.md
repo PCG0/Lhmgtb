@@ -4,13 +4,13 @@
 
 <div align="center">
 
-# 苇萸
+# 苇萸 
 
 [![GitHub release](https://img.shields.io/badge/release-22w6-brightgreen)](https://github.com/PCG0/Lhmgtb/releases) [![GitHub wiki](https://img.shields.io/badge/wiki-官方中文-blue)](https://github.com/PCG0/Lhmgtb/wiki)
 
 </div>
 
-# 更新日志
+# 更新日志 ![](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Images/阿苇gif.gif)
 
 > **关于游戏请移步至[Wiki](https://github.com/PCG0/Lhmgtb/wiki)** 
 
