@@ -1,10 +1,11 @@
+<!--
 <p align="center">
 <img src="https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Wei-02.png"/>
 </p>
-
+-->
 <div align="center">
 
-# 苇萸 
+# 苇萸
 
 [![GitHub release](https://img.shields.io/badge/release-22w6-brightgreen)](https://github.com/PCG0/Lhmgtb/releases) [![GitHub wiki](https://img.shields.io/badge/wiki-官方中文-blue)](https://github.com/PCG0/Lhmgtb/wiki)
 
@@ -22,9 +23,9 @@
 - 追加 更多的粒子效果
 - 移除玩家自带光源 ~~（后续将在 6c 版本重新加回，并可以由玩家自行开关）~~ *不要随便立flag（*
 
-![o1](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Online-1.png)
+![作者与一位朋友的联机截图-1](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Online-1.png)
 
-![o2](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Online-2.png)
+![作者与一位朋友的联机截图-2](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Online-2.png)
 
 ## 22w5
 
@@ -36,9 +37,9 @@
     - 临时性设置：OPTION 用于切换“全屏”与“窗口”
 - 当鼠标空闲时自动隐藏
 
-![mmms](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/MainMenu-MinScreen.png)
+![全屏](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/MainMenu-MinScreen.png)
 
-![mmfs](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/MainMenu-FullScreen.png)
+![窗口](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/MainMenu-FullScreen.png)
 
 ## 22w4
 
