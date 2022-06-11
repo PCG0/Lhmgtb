@@ -11,9 +11,13 @@
 
 </div>
 
-# 更新日志 ![](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Images/阿苇gif.gif)
+> **关于游戏请移步至[Wiki](https://github.com/PCG0/Lhmgtb/wiki)**
 
-> **关于游戏请移步至[Wiki](https://github.com/PCG0/Lhmgtb/wiki)** 
+苇萸是完全开源的游戏合作项目，因此本仓库存放了完整的游戏工程文件。
+
+该项目仍处于起步阶段，且预计长期处于该阶段，因此，进度会十分缓慢且无法保证质量以及是否弃坑。
+
+# 更新日志 ![](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Images/阿苇gif.gif)
 
 ## 22w6
 
