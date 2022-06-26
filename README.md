@@ -17,53 +17,6 @@
 
 该项目仍处于起步阶段，且预计长期处于该阶段，因此，进度会十分缓慢且无法保证质量以及是否弃坑。
 
-# 更新日志 ![](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Images/阿苇gif.gif)
-
-## 22w6
-
-> 2022-05-24
-
-- 新增 *极高延迟的* 多人在线联机
-- 追加 更多的粒子效果
-- 移除玩家自带光源 ~~（后续将在 6c 版本重新加回，并可以由玩家自行开关）~~ *不要随便立flag（*
-
-![作者与一位朋友的联机截图-1](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Online-1.png)
-
-![作者与一位朋友的联机截图-2](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/Online-2.png)
-
-## 22w5
-
-> 2022-05-23
-
-- 对临时 OPTION 进行了微小的调整
-- 使用数字键“1”和“2”控制镜头缩放，而不再使用鼠标滚轮控制
-- 新增 主菜单
-    - 临时性设置：OPTION 用于切换“全屏”与“窗口”
-- 当鼠标空闲时自动隐藏
-
-![全屏](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/MainMenu-MinScreen.png)
-
-![窗口](https://github.com/PCG0/Lhmgtb/blob/main/Assets/Aseprite/MainMenu-FullScreen.png)
-
-## 22w4
-
-> 2022-05-17
-
-- 贴近墙不能无限跳跃了
-- 地图更新
-- 新增 粒子效果
-
-## 22w3
-
-> 2022-05-16
-
-- 新增 按下 Q 键以快速退出游戏
-
-## 22w2 及 更旧的版本
-
->  忘记了
-
-- 忘记了
 
 # Staff
 
