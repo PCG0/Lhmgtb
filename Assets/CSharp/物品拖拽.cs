@@ -19,6 +19,8 @@ public class 物品拖拽 : MonoBehaviour
     Vector2 followPos;
 
 
+
+
     //float offsetX;
     //float offsetY;
     

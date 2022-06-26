@@ -82,9 +82,8 @@ public class 阿苇 : MonoBehaviourPun
     //    //枪口.up = direction;
     //}
 
-    public void Update(){
-        if (!photonView.IsMine && PhotonNetwork.IsConnected)
-            return;
+    public void Update() {
+        if (!photonView.IsMine && PhotonNetwork.IsConnected) return;
 
         //移动
         //float moveX = Input.GetAxis("Horizontal");
@@ -123,7 +122,7 @@ public class 阿苇 : MonoBehaviourPun
             //PPSD();
             rb.velocity = new Vector2(moveX * moveSpeed, rb.velocity.y);
             rb.angularVelocity = rb.velocity.x / 0.5f * Mathf.Rad2Deg;
-            anima.SetFloat("isRunning", Mathf.Abs(moveX));
+            // anima.SetFloat("isRunning", Mathf.Abs(moveX));
         }
         if (Time.time > resumeTime){
             isDash = false;
@@ -162,14 +161,15 @@ public class 阿苇 : MonoBehaviourPun
             //PPS();
             transform.localScale = new Vector3(1, 1, 1);
             //这里不再使用 localSacle 的原因是我在 BV1qt4y1U7aS 中得知使用角度旋转的话，自身坐标系也会跟着转。
-            //transform.eulerAngles = new Vector3(0, 0, 0);
+            // transform.eulerAngles = new Vector3(0, 0, 0);
         } else{
             if (moveX < 0){
                 //PPS();
                 transform.localScale = new Vector3(-1, 1, 1);
-                //transform.eulerAngles = new Vector3(0, 180, 0);
+                // transform.eulerAngles = new Vector3(0, 180, 0);
             } 
         } 
+        
         
         //重力控制
         if (rb.velocity.y > 0){
@@ -188,9 +188,11 @@ public class 阿苇 : MonoBehaviourPun
         if (transform.position.y < deadLiney){
             GetComponent<AudioSource>().enabled = false;
             Invoke("Restart", 2f);
+            if (!photonView.IsMine && PhotonNetwork.IsConnected) return;
         }
 
     }
+
     //void PPS(){
     //    playerPS.Play();
     //}
