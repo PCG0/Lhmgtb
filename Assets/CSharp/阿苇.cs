@@ -8,6 +8,7 @@ public class 阿苇 : MonoBehaviourPun
 {
     #region 组件
     private Rigidbody2D rb;
+    // private SpriteRenderer sr;
     #endregion
 
     #region 参数
@@ -52,6 +53,7 @@ public class 阿苇 : MonoBehaviourPun
 
     public void Start(){
         rb = GetComponent<Rigidbody2D>();
+        // sr = GetComponent<SpriteRenderer>();
         //rb.gravityScale = 4;
         jumpForce = 4.5f;
         jumpholdforce = 0.35f;
@@ -132,41 +134,20 @@ public class 阿苇 : MonoBehaviourPun
             Instantiate(ghostObject, transform.position, Quaternion.identity);
             ghostTime = Time.time + dashTime / ghostNum;
         }
-
         
-        //冲刺
-        //
-        //if (Input.GetKey("left shift") && mCollisionObjectCount > 0){
-        //    moveSpeed = 7.5f;
-        //    if (Time.time > ghostTime){
-        //        Instantiate(gameObject, transform.position, Quaternion.identity);
-        //        ghostTime = Time.time + dashTime / ghostNum;
-        //    }
-        //}else{
-        //    moveSpeed = 3.5f;
-        //}
-
-        //if (Input.GetAxisRaw("Horizontal") != 0){
-        //    direction = Input.GetAxisRaw("Horizontal");
-        //}
-        //if (Input.GetKeyDown("left shift")){
-        //    resumeTime = Time.time + dashTime;
-        //    rb.velocity = new Vector2(direction * dashForce, 0);
-        //    rb.gravityScale = 0;
-        //}
-
-
         //转身
         if (moveX > 0){
-            //PPS();
-            transform.localScale = new Vector3(1, 1, 1);
-            //这里不再使用 localSacle 的原因是我在 BV1qt4y1U7aS 中得知使用角度旋转的话，自身坐标系也会跟着转。
-            // transform.eulerAngles = new Vector3(0, 0, 0);
+            // PPS();
+            // transform.localScale = new Vector3(1, 1, 1);
+            // 这里不再使用 localSacle 的原因是我在 BV1qt4y1U7aS 中得知使用角度旋转的话，自身坐标系也会跟着转。
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            // sr.flipX = false;
         } else{
             if (moveX < 0){
                 //PPS();
-                transform.localScale = new Vector3(-1, 1, 1);
-                // transform.eulerAngles = new Vector3(0, 180, 0);
+                // transform.localScale = new Vector3(-1, 1, 1);
+                transform.eulerAngles = new Vector3(0, 180, 0);
+                // sr.flipX = true;
             } 
         } 
         
