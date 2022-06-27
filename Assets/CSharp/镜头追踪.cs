@@ -22,7 +22,8 @@ public class 镜头追踪 : MonoBehaviourPun
     // Update is called once per frame
     void Update()
     {
-        if (PhotonNetwork.IsConnected){
+        // if (!photonView.IsMine && PhotonNetwork.IsConnected) return;
+        if (PhotonNetwork.IsConnected&&GameObject.FindWithTag("Player")){
             m_playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
             CMF();
         }

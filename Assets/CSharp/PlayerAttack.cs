@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviourPun
         if (Input.GetMouseButtonDown(0))
         {
             Attack();
-            StartCoroutine(FindObjectOfType<CameraController>().CameraShakeCo(0.2f, 0.2f));
+            if (FindObjectOfType<CameraController>()) StartCoroutine(FindObjectOfType<CameraController>().CameraShakeCo(0.2f, 0.2f));
         }
     }
 

@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class 物品拖拽 : MonoBehaviour
+public class 物品拖拽 : MonoBehaviourPun
 {
     Vector2 mousePos;
     Vector2 distance;
@@ -17,18 +18,14 @@ public class 物品拖拽 : MonoBehaviour
     public bool isVertical = true;
     Vector2 pos;
     Vector2 followPos;
-
-
-
-
-    //float offsetX;
-    //float offsetY;
-    
-
     private void Start()
     {
-        rb.GetComponent<Rigidbody2D>();
-        Instantiate(circleObject, transform.position, Quaternion.identity);
+        if (GameObject.FindWithTag("allowpick"))
+        {
+            rb.GetComponent<Rigidbody2D>();
+            Instantiate(circleObject, transform.position, Quaternion.identity);
+        }
+        
         if (follow != null){
             followPos = follow.transform.localPosition;
         } 
@@ -41,15 +38,19 @@ public class 物品拖拽 : MonoBehaviour
 
     }
 
-    private void OnMouseDrag(){
+    private void OnMouseDrag()
+    {
+        // if (rb.GetComponent<Rigidbody2D>() != null) return;
         transform.position = mousePos + distance;
-        rb.gravityScale = 0;
-        rb.velocity = Vector2.zero;
+        // rb.gravityScale = 0;
+        // rb.velocity = Vector2.zero;
 
 
     }
-    private void OnMouseUpAsButton(){
-        rb.gravityScale = 0;
+    private void OnMouseUpAsButton()
+    {
+        // if (rb.GetComponent<Rigidbody2D>() != null) return;
+        // rb.gravityScale = 0;
     }
 /*
     private void OnTriggerEnter2D(Collider2D other){

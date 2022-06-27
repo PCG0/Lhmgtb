@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6730819343314926884}
   - component: {fileID: 7054016484442030898}
   - component: {fileID: 2344896379647556202}
-  - component: {fileID: 1878911406501003957}
+  - component: {fileID: 7222997156275180686}
   m_Layer: 0
   m_Name: Slash
   m_TagString: Untagged
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 1
---- !u!114 &1878911406501003957
+--- !u!114 &7222997156275180686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,12 +129,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1862231877652823187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters: []
-  m_SynchronizeLayers:
-  - SynchronizeType: 1
-    LayerIndex: 0
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 1
+  ObservedComponents:
+  - {fileID: 0}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

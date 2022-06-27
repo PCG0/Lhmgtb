@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+// using Photon.Pun;
 
 public class Enemy : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        if(!GameObject.FindGameObjectWithTag("Player")) return;
         hp = maxHp;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         sp = GetComponent<SpriteRenderer>();
@@ -21,30 +23,30 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        FollowPlayer();
+        // FollowPlayer();
 
         hurtCounter -= Time.deltaTime;
-        if (hurtCounter <= 0)
-            sp.material.SetFloat("_FlashAmount", 0);
+        // if (hurtCounter <= 0)
+        //     sp.material.SetFloat("_FlashAmount", 0);
     }
 
-    private void FollowPlayer()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-    }
+    // private void FollowPlayer()
+    // {
+    //     transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+    // }
 
     public void TakenDamage(float _amount)
     {
         hp -= _amount;
-        HurtShader();
+        // HurtShader();
         if (hp <= 0)
             Destroy(gameObject);
     }
 
-    private void HurtShader()
-    {
-        sp.material.SetFloat("_FlashAmount", 1);
-        hurtCounter = hurtLength;
-    }
+    // private void HurtShader()
+    // {
+    //     sp.material.SetFloat("_FlashAmount", 1);
+    //     hurtCounter = hurtLength;
+    // }
 
 }

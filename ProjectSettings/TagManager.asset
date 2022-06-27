@@ -9,6 +9,7 @@ TagManager:
   - "\u7269\u54C1\u8D34\u8EAB\u5224\u5B9A"
   - "\u5B9D\u7BB1"
   - "\u5730\u9762"
+  - allowpick
   layers:
   - Default
   - TransparentFX
