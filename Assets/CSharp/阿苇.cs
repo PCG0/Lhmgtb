@@ -13,7 +13,7 @@ public class 阿苇 : MonoBehaviourPun
 
     #region 参数
         [Header("移动")]
-            // public float moveSpeed = 3.5f;//人物移动速度
+            public float moveSpeed = 3.5f;//人物移动速度
             Vector2 move;
             public float linearDrag=40f;// 减速
             public float targetSpeed=3.5f;// 最大速度
@@ -22,8 +22,10 @@ public class 阿苇 : MonoBehaviourPun
         [Header("跳跃")]
             public float JumpUpGraivity;
             public float FallDownGraivity;
-            public float jumpForce;//跳跃力
+            public float jumpForce=4f;//跳跃力
             public float jumpholdforce;
+            public float fallMultiplier=2.5f;
+            public float lowJumpMultiplier=2f;
             float jumpTime;
             bool isGroud;
             public LayerMask ground;
@@ -42,9 +44,9 @@ public class 阿苇 : MonoBehaviourPun
         [Header("动画")]
             public Animator anima;
     
-        [Header("杂项")]
-            public int mCollisionObjectCount = 0;
-            public ParticleSystem playerPS;
+        // [Header("杂项")]
+            // public int mCollisionObjectCount = 0;
+            // public ParticleSystem playerPS;
             //public int damage;
     #endregion
 
@@ -54,14 +56,15 @@ public class 阿苇 : MonoBehaviourPun
         float ghostTime;
     #endregion
 
-    public void Start(){
+    public void Start()
+    {
         rb = GetComponent<Rigidbody2D>();
         // sr = GetComponent<SpriteRenderer>();
-        //rb.gravityScale = 4;
-        jumpForce = 4.5f;
-        jumpholdforce = 0.35f;
-        JumpUpGraivity = 1.5f;
-        FallDownGraivity = 3;
+        //rb.gravityScale = 4; 
+        // jumpForce = 4.5f;
+        // jumpholdforce = 0.35f;
+        // JumpUpGraivity = 1.5f;
+        // FallDownGraivity = 3;
     }
 
     
@@ -94,18 +97,50 @@ public class 阿苇 : MonoBehaviourPun
     public void FixedUpdate()
     {
         var moveX = Input.GetAxis("Horizontal");
+        // rb.gravityScale = 2f;
         rb.AddForce(new Vector2(moveX, 0) * acceleration);
         if(Mathf.Abs(rb.velocity.x) > targetSpeed)
+        {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * targetSpeed, rb.velocity.y);// 限制速度
+            rb.gravityScale = 2f;
+        }
         if(Mathf.Abs(moveX) < 0.4f)
+        {
             rb.drag = linearDrag;
-        else rb.drag = 0f;
+            rb.gravityScale = 2f;
+        }
+        else
+        {
+            rb.drag = 0f;
+            rb.gravityScale = 2f;
+        }
+        if(Input.GetKeyUp("A") && Input.GetKeyUp("D"))
+            rb.gravityScale = 2f;
+
+        // isGroud = rb.IsTouchingLayers(ground);
+        // if (Input.GetKeyDown(KeyCode.Space) && isGroud){
+        //     //PPS();
+        //     //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        //     jumpTime = Time.time + 0.05f;
+        //     //anima.SetBool("isJumping", true);
+        //     rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        // }
+
+        // if (Input.GetKey(KeyCode.Space) && !isGroud  && Time.time < jumpTime){
+        //     //PPS();
+        //     rb.AddForce(new Vector2(0, jumpholdforce), ForceMode2D.Impulse);
+        // }
+        // if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space)) 
+        //     rb.gravityScale = JumpUpGraivity;//跳跃时的重力
+        // else 
+        //     rb.gravityScale = FallDownGraivity;//下落时的重力
     }
 
 
     public void Update()
     {
         var moveX = Input.GetAxis("Horizontal");
+
         // move = GetInput();
         if (!photonView.IsMine && PhotonNetwork.IsConnected) return;
 
@@ -139,11 +174,12 @@ public class 阿苇 : MonoBehaviourPun
         // else if(rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
         //     rb.gravityScale = FallDownGraivity;
         // else rb.gravityScale = jumpForce;
+        else rb.gravityScale = 2f;
 
         if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space)) 
             rb.gravityScale = JumpUpGraivity;//跳跃时的重力
         else 
-            rb.gravityScale = FallDownGraivity;//下落时的重力
+            rb.gravityScale = 2f;//下落时的重力
         
 
         

@@ -768,7 +768,7 @@ ScriptsOnlyBuild:
     className: ScriptMachine
   - hash:
       serializedVersion: 2
-      Hash: 56c4177b897975ef8b627451df1ea412
+      Hash: e55cf3112875bd4b3be343b037136b7f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: "\u963F\u82C7"

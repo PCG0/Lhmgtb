@@ -138,21 +138,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de280f69e56cb9c4ab34d57042a2014e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 3.5
   linearDrag: 30
   targetSpeed: 7.5
   acceleration: 25
-  JumpUpGraivity: 3
-  FallDownGraivity: 1
+  JumpUpGraivity: 0
+  FallDownGraivity: 0
   jumpForce: 7
-  jumpholdforce: 0.35
+  jumpholdforce: 0
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
   ground:
     serializedVersion: 2
     m_Bits: 256
   dashForce: 15
   dashTime: 0.1
   anima: {fileID: 0}
-  mCollisionObjectCount: 0
-  playerPS: {fileID: 0}
   ghostObject: {fileID: 6275971147068317306, guid: 49452481871d3284182ac32d4d5478a7, type: 3}
   ghostNum: 5
 --- !u!61 &6896816463819494439
