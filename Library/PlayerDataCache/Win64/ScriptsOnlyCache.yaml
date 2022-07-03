@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Enemy
     - Ghost
+    - MainMenuButton
     - MouseS
     - NetworkLauncher
     - PlayerAttack
@@ -89,9 +90,11 @@ ScriptsOnlyBuild:
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -116,6 +119,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
@@ -142,10 +146,16 @@ ScriptsOnlyBuild:
     - TMPro.TMP_GlyphAdjustmentRecord
     - TMPro.TMP_GlyphPairAdjustmentRecord
     - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_InputField/OnChangeEvent
+    - TMPro.TMP_InputField/SelectionEvent
+    - TMPro.TMP_InputField/SubmitEvent
+    - TMPro.TMP_InputField/TextSelectionEvent
+    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
     - TMPro.TMP_Sprite
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
@@ -170,6 +180,27 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuButton
+    methodName: ResolutionSet
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuButton
+    methodName: Quit
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuButton
+    methodName: Play
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuButton
+    methodName: OptiCNM
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuButton
+    methodName: OptiLog
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuButton
+    methodName: bkm
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuButton
+    methodName: Options
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerUIntField
     methodName: OnDecrement
@@ -217,8 +248,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
     - Class: 60
@@ -231,6 +260,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -241,6 +274,107 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 860}
+    - Class: 114
+      Script: {instanceID: 2656}
+    - Class: 114
+      Script: {instanceID: 3352}
+    - Class: 114
+      Script: {instanceID: 3486}
+    - Class: 114
+      Script: {instanceID: 3736}
+    - Class: 114
+      Script: {instanceID: 4794}
+    - Class: 114
+      Script: {instanceID: 5306}
+    - Class: 114
+      Script: {instanceID: 5334}
+    - Class: 114
+      Script: {instanceID: 5448}
+    - Class: 114
+      Script: {instanceID: 6528}
+    - Class: 114
+      Script: {instanceID: 7026}
+    - Class: 114
+      Script: {instanceID: 7470}
+    - Class: 114
+      Script: {instanceID: 8358}
+    - Class: 114
+      Script: {instanceID: 8428}
+    - Class: 114
+      Script: {instanceID: 8448}
+    - Class: 114
+      Script: {instanceID: 8724}
+    - Class: 114
+      Script: {instanceID: 8998}
+    - Class: 114
+      Script: {instanceID: 11036}
+    - Class: 114
+      Script: {instanceID: 11116}
+    - Class: 114
+      Script: {instanceID: 11266}
+    - Class: 114
+      Script: {instanceID: 11558}
+    - Class: 114
+      Script: {instanceID: 11940}
+    - Class: 114
+      Script: {instanceID: 12784}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1746}
     - Class: 114
@@ -258,8 +392,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2450}
     - Class: 114
-      Script: {instanceID: 2656}
-    - Class: 114
       Script: {instanceID: 3132}
     - Class: 114
       Script: {instanceID: 3252}
@@ -270,13 +402,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3468}
     - Class: 114
-      Script: {instanceID: 3486}
-    - Class: 114
-      Script: {instanceID: 3736}
-    - Class: 114
       Script: {instanceID: 4004}
     - Class: 114
-      Script: {instanceID: 4794}
+      Script: {instanceID: 4232}
     - Class: 114
       Script: {instanceID: 4846}
     - Class: 114
@@ -286,13 +414,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5096}
     - Class: 114
-      Script: {instanceID: 5306}
-    - Class: 114
       Script: {instanceID: 5334}
     - Class: 114
-      Script: {instanceID: 5448}
-    - Class: 114
       Script: {instanceID: 5576}
+    - Class: 114
+      Script: {instanceID: 5582}
     - Class: 114
       Script: {instanceID: 5642}
     - Class: 114
@@ -304,15 +430,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6528}
     - Class: 114
-      Script: {instanceID: 7026}
-    - Class: 114
       Script: {instanceID: 7064}
     - Class: 114
       Script: {instanceID: 7106}
     - Class: 114
       Script: {instanceID: 7220}
-    - Class: 114
-      Script: {instanceID: 7470}
     - Class: 114
       Script: {instanceID: 7982}
     - Class: 114
@@ -321,8 +443,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8184}
     - Class: 114
       Script: {instanceID: 8358}
-    - Class: 114
-      Script: {instanceID: 8428}
     - Class: 114
       Script: {instanceID: 8448}
     - Class: 114
@@ -340,9 +460,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9644}
     - Class: 114
+      Script: {instanceID: 9734}
+    - Class: 114
       Script: {instanceID: 9878}
     - Class: 114
       Script: {instanceID: 9942}
+    - Class: 114
+      Script: {instanceID: 10426}
     - Class: 114
       Script: {instanceID: 10562}
     - Class: 114
@@ -353,8 +477,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11036}
     - Class: 114
       Script: {instanceID: 11046}
-    - Class: 114
-      Script: {instanceID: 11116}
     - Class: 114
       Script: {instanceID: 11142}
     - Class: 114
@@ -372,8 +494,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11768}
     - Class: 114
-      Script: {instanceID: 11940}
-    - Class: 114
       Script: {instanceID: 12174}
     - Class: 114
       Script: {instanceID: 12482}
@@ -389,10 +509,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
-      Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
@@ -402,10 +518,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 19719996
-      Script: {instanceID: 0}
-    - Class: 156049354
       Script: {instanceID: 0}
     - Class: 483693784
       Script: {instanceID: 0}
@@ -768,7 +880,7 @@ ScriptsOnlyBuild:
     className: ScriptMachine
   - hash:
       serializedVersion: 2
-      Hash: e55cf3112875bd4b3be343b037136b7f
+      Hash: cec56e860797ef6c15c9a5533e529326
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: "\u963F\u82C7"
@@ -2682,5 +2794,6 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
+  - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: "C:/Users/resum/OneDrive - rrr6/\u684C\u9762/\u82C7\u96F6\u4E8C\u516D/22w7beta1/LearnHowToMakeGameThoughBilibili.exe"
+  playerPath: "C:/Users/resum/OneDrive - rrr6/\u684C\u9762/\u82C7\u96F6\u4E8C\u516D/22w7beta/LearnHowToMakeGameThoughBilibili.exe"

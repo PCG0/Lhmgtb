@@ -243,16 +243,16 @@ public class 阿苇 : MonoBehaviourPun
         // } 
         
         //死亡回归
-        if (transform.position.y < deadLiney)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        if (transform.position.y < deadLiney)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        if (transform.position.y < deadLiney)
-        {
-            GetComponent<AudioSource>().enabled = false;
-            Invoke("Restart", 2f);
-            if (!photonView.IsMine && PhotonNetwork.IsConnected) return;
-        }
+        // if (transform.position.y < deadLiney)
+        //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // if (transform.position.y < deadLiney)
+        //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // if (transform.position.y < deadLiney)
+        // {
+        //     GetComponent<AudioSource>().enabled = false;
+        //     Invoke("Restart", 2f);
+        //     if (!photonView.IsMine && PhotonNetwork.IsConnected) return;
+        // }
     }
 
     //void PPS(){

@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class MainMenuButton : MonoBehaviour
 {
     private int ResoType = 1;
+    private int OptiSet = 1;
+    private int BkmSet = 1;
+    private int LogSet = 1;
 
     public void Play()
     {
@@ -25,10 +28,72 @@ public class MainMenuButton : MonoBehaviour
         //SceneManager.LoadScene("MainMenu");
     }
 
-    public void Options(){
-
+    public void Options()
+    {
+        
+        
+        if (OptiSet % 2 == 0)
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            OptiSet++;
+            return;
+        }
+        if (OptiSet % 2 == 1)
+        {
+            
+            transform.GetChild(0).gameObject.SetActive(true);
+            OptiSet++;
+            return;
+        }
     }
-
+    public void bkm()
+    {
+        if (BkmSet % 2 == 0)
+        {
+            GameObject.Find("backmusic").SetActive(false);
+            BkmSet++;
+            return;
+        }
+        if (BkmSet % 2 == 1)
+        {
+            
+            GameObject.Find("backmusic").SetActive(true);
+            BkmSet++;
+            return;
+        }
+    }
+    public void OptiCNM()
+    {
+        if (BkmSet % 2 == 0)
+        {
+            GameObject.Find("Canvas/MainMenu/UI/OptionCtrl/Options/CNM/cnm_audio").SetActive(false);
+            BkmSet++;
+            return;
+        }
+        if (BkmSet % 2 == 1)
+        {
+            
+            GameObject.Find("Canvas/MainMenu/UI/OptionCtrl/Options/CNM/cnm_audio").SetActive(true);
+            BkmSet++;
+            return;
+        }
+    }
+    public void OptiLog()
+    {
+        if (LogSet % 2 == 0)
+        {
+            GameObject.Find("Canvas/MainMenu/UI/OptionCtrl/Options/LogCtrl/Logs").SetActive(false);
+            LogSet++;
+            return;
+        }
+        if (LogSet % 2 == 1)
+        {
+            
+            GameObject.Find("Canvas/MainMenu/UI/OptionCtrl/Options/LogCtrl/Logs").SetActive(true);
+            LogSet++;
+            return;
+        }
+    }
     public void ResolutionSet()
     {
         if (ResoType % 2 == 0)
